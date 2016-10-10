@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>归档</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+  <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+  <link type="text/css" rel="stylesheet" href="css/iconfont.css">
+  <style media="screen">
+    *{
+      background: #fff;
+    }
+    div{
+      text-align: center;
+    }
+    .box{
+      display: block;
+      width: 80%;
+      margin: 100px auto;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+    }
+    .middle{
+      margin: auto;
+    }
+    .buy{
+      display: inline-block;
+      margin: 10px 30px;
+    }
+    .button{
+      background: #b52fd2;
+      color: #eee;
+    }
+    span{
+      color: #b52fd2;
+    }
+    .fontbig{
+      font-size: 1.5em;;
+    }
+    .inline{
+      display: inline-block;
+      width: 100px;
+    }
+    .iconfont{
+      display: block;
+      position: absolute;
+      right: 10px;
+      color: #ddd;
+      width: 50px;
+      background: #b52fd2;
+      border-radius: 50%;
+
+    }
+    input{
+      text-align: center;
+      margin: 0;
+    }
+    .button{
+      border: none;
+    }
+    .mybtn{
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+    .mydiv{
+      display: inline-block;
+      width: 40px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border: 1px solid #999;
+    }
+    .middle{
+      margin: 0 -6px;
+      border-left: none;
+      border-right: none;
+    }
+  </style>
+  <script type="text/javascript">
+
+  </script>
+</head>
+<body>
+  <div class="page-group">
+      <div class="page page-current">
+        <!--标题区 -->
+        <nav class="bar bar-nav bar-standard" style="background-color:#b46ae3">
+          <a class="button button-link button-nav pull-left" href="001.html" style="color:#ddd">
+              <span class="icon icon-left"></span>
+          </a>
+          <h1 class="title"><span style="color:#ddd">晒单</span></h1>
+        </nav>
+
+        <!--内容区 -->
+        <div class="content">
+          <div class="box">
+            <div class="button button-round button-big">
+              <span class="iconfont">&#xe664;</span>
+            </div>
+            <div class="textarea">
+              <p>你共有<span id="sum" class="fontbig">11</span>个夺宝码</p>
+            </div>
+            <div class="middlebig">
+              <img src="./image/f_5.jpeg" alt="" />
+              <div class="buy">
+                <div class="buyButton">
+                  <div class="mydiv left">
+                    <input type="button" class="mybtn reduce" name="button" value="-"></input>
+                  </div>
+                  <div class="mydiv middle">
+                    <input type="text" class="mybtn number" size="1" name="name" value="1"></input>
+                  </div>
+                  <div class="mydiv right">
+                    <input type="button" class="mybtn increase" name="button" value="+"></input>
+                  </div>
+                  罐
+                </div>
+                <div class="textarea">
+                  <p>需 <span id="need">10</span> 个幸运码</p>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="button button-round inline" style="color:#ddd">兑换</a>
+            <div class="textarea">
+              <p>此次兑换后还剩 <span id=>1</span> 个夺宝码</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+  <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+  <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+  <script type="text/javascript">
+    $.init();
+    $('.reduce').on('click', function() {
+      var number = $('.number');
+      var s = number.val();
+      if (s <= 1) {
+        alert('不能再减啦!');
+      }
+      else {
+        number.val(--s);
+      }
+    })
+    $('.increase').on('click', function() {
+      var number = $('.number');
+      var s = number.val();
+      number.val(++s);
+    })
+    $('.number').on('change', function() {
+      var remain = $('.')
+    })
+  </script>
+</body>
+</html>

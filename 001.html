@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>晒单</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <style media="screen">
+    .tabBox{
+      position:relative;
+      background-color: white;
+    }
+    .notiInfo{
+      display: inline-block;
+      width: 200px;
+      height: 25px;
+      background-color: #b46ae3;
+      line-height: 25px;
+      text-align: center;
+      color: #fff;
+      margin: 0 auto;
+      border-radius: 50px;
+    }
+    .bannerBox{
+      padding-top: 15px;
+      height: 60px;
+      border: 1px solid #eee;
+      margin-top: 70px;
+    }
+    .descript{
+     color: #000;
+     padding-top: 20px;
+     display: inline-block;
+     margin-left: 14%;
+    }
+    .leftTime{
+      display: inline-block;
+      color: red;
+      padding-top: 20px;
+      padding-left: 26%;
+    }
+    .rowBot{
+      border-bottom: 2px solid #eee;
+    }
+    .rowTab{
+      height: 69px;
+      border-right: 1px solid #eee;
+    }
+    .rowTab img{
+      padding-top:6px;
+    }
+    .grid-demo{
+      padding-left: 5%;
+    }
+    .row a{
+      float: left;
+    }
+    .bannerMsg{
+      margin: 0 auto;
+      margin-left: 25%;
+    }
+    .rowTab:hover{
+      margin-bottom: -5px;
+      border-bottom: 10px solid #eee;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="page-group">
+        <div class="page page-current" id="router">
+          <!--swiper -->
+          <div class="content">
+            <div class="swiper-container" data-space-between='10' style="padding:0">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./image/banner01.png" alt=""></div>
+                <div class="swiper-slide"><img src="./image/banner01.png" alt=""></div>
+                <div class="swiper-slide"><img src="./image/banner01.png" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="content tabBox">
+            <div class="content grid-demo" style="padding-left:0">
+              <div class="row" style="margin-top:2px;text-align:center">
+                <a href="001.html" class=" rowTab" style="width:25%;border-bottom: 10px solid #eee;"><img src="image/tab01.png" alt="" /></a>
+                <a href="001tab.html" class=" rowTab" style="width:25%"><img src="image/tab02.png" alt="" /></a>
+                <a href="#" class=" rowTab" style="width:25%"><img src="image/tab03.png" alt="" /></a>
+                <a href="#" class=" rowTab" style="width:25%"><img src="image/tab04.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="row bannerBox">
+            <div class="col-100">
+               <a class="bannerMsg" href="#"><span class="notiInfo">您有1条兑奖信息</span></a>
+            </div>
+            </div>
+            <div class="row rowBot">
+              <div class="col-60" style="overflow:hidden"><a href="#"><img src="image/colImg01.png" alt="" style="min-width:80%;"></a></div>
+              <div class="col-40"><div class="descript">Iphone7 白色126G</div>
+                <span class="leftTime">00:18:20</span>
+            </div>
+            </div>
+            <div class="row rowBot">
+              <div class="col-60" style="overflow:hidden"><a href="#"><img src="image/colImg01.png" alt="" style="min-width:80%;"></a></div>
+              <div class="col-40">
+                <div class="descript">Iphone7 白色126G</div>
+                <span class="leftTime">00:18:20</span>
+            </div>
+            </div>
+            <div class="row rowBot">
+              <div class="col-60" style="overflow:hidden"><a href="#"><img src="image/colImg02.png" alt="" style="min-width:80%;"></a></div>
+              <div class="col-40"><div class="descript">大疆无人机 白色</div>
+                <span class="leftTime">23:18:20</span>
+            </div>
+            </div>
+            </div>
+          </div>
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+      $.init();
+    </script>
+  </body>
+</html>

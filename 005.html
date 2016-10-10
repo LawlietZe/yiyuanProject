@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>归档</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/iconfont.css"> -->
+    <style media="screen">
+      header,.content{
+        font-size: 16px;
+        background: #fff;
+      }
+      img{
+        width: 100%;
+      }
+      .button{
+        border: 1px solid #881e78;
+      }
+      .inline{
+        display: inline-block;;
+      }
+      .bul{
+        list-style-type: none;
+        list-style-position: inside;
+      }
+      .bgZise{
+        background-color: #b52fd2;
+      }
+      .bgWhite{
+        background-color: #fff;
+        color: #333;
+      }
+      .fondWhite{
+        color: #ddd;
+      }
+      .fondZise{
+        color: #b52fd2;
+      }
+      .triangle-topleft{
+        margin-bottom: -35px;
+        width: 0;
+      	height: 0;
+      	border-top: 35px solid #b52fd2;
+      	border-right: 50px solid transparent;
+      }
+      .loading{
+        display: block;
+        position: relative;
+        margin: 5px auto;
+        height: 15px;
+        width: 100%;
+        background: #eee;
+      }
+      .success{
+        display: block;
+        position: relative;
+        width: 15%;;
+        height: 15px;
+        background: #e4bb0c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-group">
+        <div class="page page-current">
+          <!--标题区 -->
+          <header class="bar bar-nav bgZise">
+            <a class="button button-link button-nav pull-left" href="#" style="color:#ddd">
+                <span class="icon icon-left"></span>
+            </a>
+            <h1 class="title"><span style="color:#ddd">奖品详情</span></h1>
+          </header>
+
+          <!--内容区 -->
+          <div class="content">
+            <!--图片轮播-->
+            <div class="swiper-container" data-space-between='10'>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./image/b_1.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/b_1.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/b_1.jpeg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!--介绍-->
+            <div class="content-padded">
+              <a href="#" class="button button-round inline" style="color:#b52fd2">夺宝未成形</a>
+              <span class="fontBig">
+                <b> iphone7</b>  白色<b>126G</b> 现货
+              </span>
+              <!-- <a href="#" class="button inline bgZise fondWhite">去看晒奖</a> -->
+              <p>
+                全新摄像头，前后千万像素，蓝宝石屏摔不烂，万人空巷买不到;世界上最好的手机就是他！
+              </p>
+            </div>
+
+            <!--卡片-->
+            <div class="card">
+              <div class="card-content">
+                <!--进度条-->
+                <div class="loading">
+                  <span class="success"></span>
+                </div>
+                <span style="text-decoration:line-through">
+                  <span>已购买：15</span>
+                  <span>　　　　　总需：100</span>
+                  <span>　　　　　剩余：<span style="color:red">85</span></span>
+                </span>
+              </div>
+              <div class="card-footer bgZise">
+                <div class="inline fondWhite">
+                  揭晓时间：2016-08-09 17：30：00<br>
+                  倒计时揭晓：<span style="font-size:1.2em;text-decoration:line-through"><b>00：38：22</b></span>
+                </div>
+
+                <a href="#" class="button button-round inline bgWhite">GO!用幸运码兑礼</a>
+              </div>
+            </div>
+
+            <!--列表-->
+            <div class="content-block-title card-footer">
+              <span><b>所有参与记录</b></span>
+              <span>2016-08-09 17：00：00开始</span>
+            </div>
+            <div class="list-block media-list">
+              <ul>
+                <div class="triangle-topleft"></div>
+                <li class="item-content">
+                  <div class="item-media">
+                    <img src="./image/b_3.jpeg" width="44">
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-subtitle">参与者：138****1323 <span style="color:#42debe">珠海</span></div>
+                    <div class="item-subtitle">参与时间：2016-08-09 17:10:05:09</div>
+                    <div class="item-subtitle">本期购买：10份 <span style="color:#b52fd2"> 10000038</span> 10000039 10000040<span></span></div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-media">
+                    <img src="./image/b_3.jpeg" width="44">
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-subtitle">参与者：138****1323 <span style="color:#42debe">珠海</span></div>
+                    <div class="item-subtitle">参与时间：2016-08-09 17:10:05:09</div>
+                    <div class="item-subtitle">本期购买：10份</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+      $.init();
+    </script>
+  </body>
+</html>

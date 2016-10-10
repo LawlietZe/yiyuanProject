@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>归档</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/iconfont.css"> -->
+    <style media="screen">
+      header,.content,.bar-header-secondary{
+        font-size: 16px;
+        background: #fff;
+      }
+      img{
+        max-width: 100%;
+      }
+      .button{
+        border: 1px solid #881e78;
+      }
+      .inline{
+        display: inline-block;;
+      }
+      .bul{
+        list-style-type: none;
+        list-style-position: inside;
+      }
+      .bgZise{
+        background-color: #b52fd2;
+      }
+      .bgWhite{
+        background-color: #fff;
+        color: #333;
+      }
+      .fondWhite{
+        color: #ddd;
+      }
+      .fondZise{
+        color: #b52fd2;
+      }
+      .triangle-topleft{
+        margin-bottom: -60px;
+        width: 0;
+      	height: 0;
+      	border-top: 60px solid #b52fd2;
+      	border-right: 70px solid transparent;
+        display: none;
+      }
+      .active{
+        display: block;
+      }
+      .item-media{
+        margin: auto 40px;
+        width: 40px;
+      }
+      .col-50{
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-group">
+        <div class="page page-current">
+          <!--标题区 -->
+          <nav class="bar bar-nav bar-standard bgZise">
+            <a class="button button-link button-nav pull-left" href="001.html" style="color:#ddd">
+                <span class="icon icon-left"></span>
+            </a>
+            <h1 class="title"><span style="color:#ddd">我的夺宝</span></h1>
+          </nav>
+          <div class="bar bar-header-secondary">
+            <p class="title left">共 <span style="color: #b52fd2;">20</span>个夺宝码</p>
+          </div>
+
+          <!--内容区 -->
+          <div class="content">
+            <!--栅栏-->
+            <div class="box" style="border-top:5px solid #ccc;border-bottom:5px solid #ccc;">
+              <div class="row" style="border-bottom:1px solid #bbb;">
+                <div class="col-50" style="border-right:1px solid #bbb;">
+                  <div class="triangle-topleft active"></div>
+                  <a href="011_12_13.html" class="imgBox" style="display:block;margin:auto;text-align:center">
+                    <br>
+                    <img src="./image/f_1.jpeg" alt="" />
+                    <br>夺宝记录
+                  </a>
+                </div>
+                <div class="col-50" style="margin:0">
+                  <div class="triangle-topleft"></div>
+                  <a href="#" class="imgBox" style="display:block;margin:auto;text-align:center">
+                    <br>
+                    <img src="./image/f_2.jpeg" alt="" />
+                    <br>兑码记录
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-50" style="border-right:1px solid #bbb;">
+                  <div class="triangle-topleft"></div>
+                  <a href="#" class="imgBox" style="display:block;margin:auto;text-align:center">
+                    <br>
+                    <img src="./image/f_3.jpeg" alt="" />
+                    <br>晒单记录
+                  </a>
+                </div>
+                <div class="col-50" style="margin:0">
+                  <div class="triangle-topleft"></div>
+                  <a href="#" class="imgBox" style="display:block;margin:auto;text-align:center">
+                    <br>
+                    <img src="./image/f_4.jpeg" alt="" />
+                    <br>常见问题
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--列表-->
+            <div class="list-block media-list">
+              <ul>
+                <li class="item-content">
+                  <div class="item-media">
+                    <img src="./image/f_5.jpeg" width="44">
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title"><span>可口可乐 <b>330ML</b></span></div>
+                    <div class="item-subtitle">
+                      <span>10</span>个夺宝码
+                      <a href="#" class="button button-round inline bgZise" style="color:#555">点击兑换</a></div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-media">
+                    <img src="./image/f_6.jpeg" width="44">
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title"><span>爆米花 <b>150g</b></span></div>
+                    <div class="item-subtitle">
+                      <span>10</span>个夺宝码
+                      <a href="#" class="button button-round inline bgZise" style="color:#555">点击兑换</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+      $.init();
+    </script>
+  </body>
+</html>
